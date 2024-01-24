@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+header{
+    background-color: #EAC926;;
+}
+i{
+    font-size: 2em;
+}
+a {
+    text-decoration: none; 
+    color: black; 
+}
+.top{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    justify-content: space-evenly;
+}
+.top p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.columna-oculta{
+    display: none;
+}
+.columna-oculta ul li {
+        list-style-type: none;
+        display: flex;
+        padding: 0px 10px;
+}
+.columna-oculta ul li a{
+    display: flex;
+    align-items: center;
+}
+.columna-oculta ul li a i{
+    margin-left: 10px;
+}
+.menu-bars{
+    text-align: center;
+}
+.menu-bars i{
+    background-color: #03264C;
+    color: white;
+    padding: 10px;
+    border: 3px solid #03264C;
+    border-radius: 8px;
+    margin: 10px 0px 20px 0px;
+}
+.logo , .busqueda {
+    width: 50%;
+}
+.logo {
+    padding: 10px;
+}
+.busqueda{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+.busqueda input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 90%
+}
+.busqueda button {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+.busqueda button i {
+    font-size: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px 10px 30px;
+}
+footer div i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+footer div p{
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+main section h3{
+    font-size: 24px;
+}
+main section article {
+    background-color: #fff;
+    margin: 10px 0px;
+}
+main section article img {
+    width: 100%;
+}
+article div.main-article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+.discount , .description{
+    font-size: 16px;
+}
+.discount{
+    width: 70%;
+    text-align: right;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+
+    transition: transform 2s;
+}
+main section article i:hover{
+    transform: rotate(-90deg);
+  }
+
+main section article i, .discount {
+    color: #39b54a;
+}
+.description {
+    display: none;
+    margin-top: 20px;
+}
+
+
+fieldset p a {
+    color: black;
+    text-decoration: none;
+}
+  
+fieldset input {
+    border: none;
+    font-size: 17px;
+}
+  
+.form-register {
+    display: flex;
+    flex-direction: column;
+    width: min(90%, 500px);
+    font-size: 17px;
+    text-align: center;
+    margin: auto;
+}
+  
+.form-register fieldset {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.campo-info {
+    margin-top: 30px;
+    position: relative;
+}
+  
+.campo-info label {
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    text-align: left;
+    pointer-events: none;
+    left: 10px;
+    top: 25%;
+    transition: .3s;
+}
+  
+  
+.campo-info input {
+    height: 30px;
+    border-bottom: 2px solid gray;
+    padding: 10px 0;
+    outline: none;
+    width: 100%;
+  
+}
+  
+.campo-info input:focus {
+    border-bottom: 2px solid #3498db
+}
+  
+.campo-info input:valid~.label-form,
+.campo-info input:focus~.label-form {
+    top: -60%;
+    left: 0px;
+    color: #3498db;
+  
+}
+  
+.btn {
+    margin: 20px;
+    padding: 10px;
+    border: none;
+}
+  
+.btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #3498db;
+}
+  
+.link-login:hover {
+    color: #3498db;
+}
+
+.borrar{
+    padding: 10px;
+    color: #fff;
+    background-color: #ff0000a2;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+@media ( min-width: 361px ){
+    .menu-bars {
+        display: none;
+    }
+    .columna-oculta{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .description {
+        display: block;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section div.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section div.products article {
+        width: 45%;
+    }
+}
+
+@media ( min-width: 769px ){
+    .columna-oculta {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .columna-oculta ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo , .busqueda, .top p{
+        width: 30%;
+    }
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    footer div{
+        width: 30%;
+    }
+    .copy {
+        width: 100%;
+        align-items: flex-start;
+    }
+    footer div i{
+            transition:  color, 1s;
+        }
+    footer div i:hover{
+            color: rgba(5, 152, 249, 0.479);
+        }
+    main section div.products article {
+        width: 22%;
+    }
+    .description {
+        display: none; 
+    }
+      
+    main section div.products article:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    }
+    main section div.products article:hover .description {
+        display: block;
+    }
+}
+
