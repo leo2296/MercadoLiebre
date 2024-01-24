@@ -70,17 +70,20 @@ a {
 }
 .busqueda input {
     background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
+    border: 1px solid #9b9a9a; 
+    border-radius: 5px;
     color: #666;
     padding: 2px;
-    width: 90%
+    width: 90%;
+    height: 50%;
 }
 .busqueda button {
     background-color: #FFF;
-    border: 1px solid #000;
+    border: 1px solid #9b9a9a;
+    border-radius: 5px;
     color: #666;
     width: 10%;
+    height: 50%;
 }
 .busqueda button i {
     font-size: 100%;
@@ -255,6 +258,10 @@ fieldset input {
     border: 1px solid transparent;
 }
 
+.columna-oculta :hover {
+    cursor: pointer;
+    color: rgb(9, 49, 136);
+  }
 @media ( min-width: 361px ){
     .menu-bars {
         display: none;
@@ -328,6 +335,10 @@ fieldset input {
     }
     main section div.products article:hover .description {
         display: block;
+    }
+    .top p {
+        display: flex;
+        align-items: center;
     }
 }
 
